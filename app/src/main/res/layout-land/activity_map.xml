@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_back">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:layout_marginLeft="63dp"
+        android:text="안전시설"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:layout_marginLeft="230dp"
+        android:text="편의시설"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:layout_marginLeft="365dp"
+        android:text="놀이시설"
+        android:textSize="15sp" />
+
+    <ImageView
+
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_lifevest"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="구명조끼"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="13dp"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_dinghy"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="78dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="구명정"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="77dp"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_exit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="135dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="탈출구"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="135dp"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_shopping_basket"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="190dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="편의점"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="190dp"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_food"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="245dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="식당"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="248dp"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_wc"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="300dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="화장실"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="298dp"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_responsive"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="357dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PC방"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="357dp"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_voice_recorder"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="410dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="노래방"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="408dp"/>
+</RelativeLayout>
