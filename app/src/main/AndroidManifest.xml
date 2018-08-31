@@ -32,6 +32,7 @@
         <activity android:name=".OvernightWeatherActivity"
             tools:ignore="DuplicateActivity" />
         <activity android:name=".LocationActivity"/>
+        <activity android:name=".ContentMainActivity"/>
     </application>
 
 </manifest>

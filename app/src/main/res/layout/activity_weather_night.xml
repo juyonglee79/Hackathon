@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
             android:layout_marginTop="8dp"
-            android:text="울릉도"
+            android:text="부산"
             android:textSize="12sp"
             android:textColor="#ffffff"
             app:layout_constraintStart_toEndOf="@+id/where"
