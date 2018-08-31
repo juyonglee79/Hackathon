@@ -43,7 +43,7 @@ public class LoginActivity extends Activity {
                 } else if (input2.getText().toString().equals("")) {
                     Toast.makeText(LoginActivity.this, "아이디 또는 비밀번호가 입력되지 않았습니다.", Toast.LENGTH_SHORT).show();
                 } else {
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, SelectboatActivity.class);
                     startActivity(intent);
                 }
             }
