@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tool_location"
+        android:layout_width="1000dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+        android:text="위치"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ic_back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_weather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_location"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/edittext_overnight"
+        android:elevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_location"
+        app:layout_constraintVertical_bias="0.333">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="316dp"
+            android:layout_height="88dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/toolbar_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/round1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rectangle1"
+                android:layout_width="4dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/round1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/round1" />
+
+            <TextView
+                android:id="@+id/round2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/round2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rectangle1" />
+
+            <TextView
+                android:id="@+id/go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="12dp"
+                android:text="출발 항구 : 부산항"
+                android:textColor="#122e54"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/round1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/arrive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="33dp"
+                android:text="도착 항구 : 인천항"
+                android:textColor="#122e54"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/round2"
+                app:layout_constraintTop_toBottomOf="@+id/go" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ic_location"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/when_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="47dp"
+            android:text="출발 시간"
+            android:textSize="14sp"
+            android:textColor="#122e54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <TextView
+            android:id="@+id/where_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="24dp"
+            android:text="출발 위치"
+            android:textSize="14sp"
+            android:textColor="#122e54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/when_start" />
+
+        <TextView
+            android:id="@+id/how_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="24dp"
+            android:text="소요 시간"
+            android:textSize="14sp"
+            android:textColor="#122e54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/where_start" />
+
+        <TextView
+            android:id="@+id/how_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="49dp"
+            android:text="이동 거리"
+            android:textSize="14sp"
+            android:textColor="#122e54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/how_long" />
+
+        <TextView
+            android:id="@+id/speed_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="24dp"
+            android:text="평균 속도"
+            android:textSize="14sp"
+            android:textColor="#122e54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/how_move" />
+
+        <TextView
+            android:id="@+id/maximum_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="24dp"
+            android:text="최고 속도"
+            android:textSize="14sp"
+            android:textColor="#122e54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speed_average" />
+
+        <TextView
+            android:id="@+id/when_start_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginTop="47dp"
+            android:text="8시 00분"
+            android:textColor="#122e54"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <TextView
+            android:id="@+id/where_start_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginTop="24dp"
+            android:text="위도 : 37도 경도 : 37도"
+            android:textColor="#122e54"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/when_start_show" />
+
+        <TextView
+            android:id="@+id/how_long_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginTop="24dp"
+            android:text="3시간 20분"
+            android:textColor="#122e54"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/where_start_show" />
+
+        <TextView
+            android:id="@+id/how_move_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginTop="49dp"
+            android:text="0.0Km"
+            android:textColor="#122e54"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/how_long_show" />
+
+        <TextView
+            android:id="@+id/speed_average_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginTop="24dp"
+            android:text="0.0Km/h"
+            android:textColor="#122e54"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/how_move_show" />
+
+        <TextView
+            android:id="@+id/maximum_speed_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginTop="24dp"
+            android:text="0.0Km/h"
+            android:textColor="#122e54"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speed_average_show" />
+
+        <ImageView
+            android:id="@+id/ic_boat"
+            android:layout_width="256dp"
+            android:layout_height="195dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:alpha="20"
+            android:background="@drawable/ic_boat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
