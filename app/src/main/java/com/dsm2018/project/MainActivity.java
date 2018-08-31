@@ -1,5 +1,6 @@
 package com.dsm2018.project;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -98,8 +99,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_location) {
                 Intent intent = new Intent(MainActivity.this, LocationActivity.class);
                 startActivity(intent);
-        } else if (id == R.id.nav_declaration) {
-
+        } else if (id == R.id.nav_manual) {
+            Intent intent = new Intent(MainActivity.this, ManualActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

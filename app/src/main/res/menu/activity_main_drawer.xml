@@ -13,8 +13,8 @@
             android:icon="@drawable/ic_location"
             android:title="위치" />
         <item
-            android:id="@+id/nav_declaration"
-            android:icon="@drawable/ic_declaration"
-            android:title="신고" />
+            android:id="@+id/nav_manual"
+            android:icon="@drawable/ic_manual"
+            android:title="안전수칙" />
     </group>
 </menu>

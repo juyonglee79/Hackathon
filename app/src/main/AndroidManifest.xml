@@ -35,6 +35,7 @@
             tools:ignore="DuplicateActivity" />
         <activity android:name=".LocationActivity"/>
         <activity android:name=".ContentMainActivity"/>
+        <activity android:name=".ManualActivity"/>
     </application>
 
 </manifest>
