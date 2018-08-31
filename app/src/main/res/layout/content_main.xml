@@ -1,16 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/app_bar_main">
-
+    tools:showIn="@layout/app_bar_main"
+    android:weightSum="10"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.6"
+    android:orientation="horizontal"
+    android:weightSum="10">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"/>
+<ImageView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:src="@drawable/ic_report"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"/>
     <TextView
-        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8.5"
+        android:text="(공지) 당신의 안전은 당신이 지킵니다"
+        android:gravity="center_vertical"/>
+</LinearLayout>
+<RelativeLayout
+    android:id="@+id/layout_weather"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2.5">
+    <ImageView
+        android:id="@+id/ic_cloud"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sdfsafsdfadsfasdf"/>
-
-</android.support.constraint.ConstraintLayout>
+        android:src="@drawable/ic_cloud"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="흐림"
+        android:textSize="40sp"
+        android:layout_below="@id/ic_cloud"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="습도
+86%"
+        android:textColor="#64bcd4"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="65dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수온
+26℃"
+        android:textColor="#64bcd4"
+        android:textSize="16sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="65dp"/>
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"></View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3">
+    <TextView
+        android:id="@+id/text_below"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1F"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/text_goto_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수정하기"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_below"
+        android:background="@drawable/back_map"
+        android:layout_margin="10dp"/>
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"></View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_ss"
+            android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+</LinearLayout>

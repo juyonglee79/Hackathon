@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="311dp"
+android:layout_height="197dp">
+<ImageView
+    android:id="@+id/img_cancle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_clear_black_24dp"
+    android:layout_alignParentRight="true"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="확인버튼을 누르시면 전송이 완료됩니다"
+    android:textSize="12sp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="피드백을 전송하시겠습니까?"
+    android:textSize="16sp"
+    android:textColor="@android:color/black"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="90dp"/>
+<Button
+    android:id="@+id/bt_okay"
+    android:layout_width="210dp"
+    android:layout_height="37dp"
+    android:text="확인"
+    android:textColor="#80becf"
+    android:background="@drawable/back_dialog"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="130dp"/>
+</RelativeLayout>
