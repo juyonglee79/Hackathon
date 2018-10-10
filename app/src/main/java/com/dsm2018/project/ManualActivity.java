@@ -28,7 +28,7 @@ public class ManualActivity extends AppCompatActivity {
         mWebSettings.setJavaScriptEnabled(true);
 
         Map<String, String> extraHeaders = new HashMap<String, String>();
-//        extraHeaders.put("PHPSESSID", "47afd6da2780e8a3dff8d4898844555d");
+     extraHeaders.put("PHPSESSID", "47afd6da2780e8a3dff8d4898844555d");
         mWebView.loadUrl("http://xn--3e0bk66bigar3g55yfew9be2a.kr/bbs/board.php?bo_table=board1103&wr_id=2");
     }
 }

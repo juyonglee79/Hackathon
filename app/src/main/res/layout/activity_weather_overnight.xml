@@ -33,7 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.constraint.ConstraintLayout
+    <RelativeLayout
         android:id="@+id/layout1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -44,286 +44,192 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tool2">
-
         <TextView
-            android:id="@+id/where"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="8dp"
-            android:text="현위치 : "
-            android:textColor="#122e54"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/where_we"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="8dp"
-            android:text="부산"
-            android:textColor="#122e54"
-            android:textSize="12sp"
-            app:layout_constraintStart_toEndOf="@+id/where"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            android:text="현위치: 부산"
+            android:textColor="@android:color/black"
+            android:layout_margin="7dp"/>
         <ImageView
-            android:id="@+id/ic_weather"
+            android:id="@+id/below1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="40dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/where" />
-
+            android:src="@drawable/ic_cloud"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"/>
         <TextView
-            android:id="@+id/weather"
+            android:id="@+id/below2"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content"
             android:text="흐림"
-            android:textColor="#122e54"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ic_weather" />
-
+            android:textColor="@android:color/black"
+            android:layout_below="@id/below1"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"/>
         <TextView
-            android:id="@+id/humidity"
+            android:id="@+id/below3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="30dp"
-            android:text="습도"
-            android:textColor="#64bcd4"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weather" />
-
-        <TextView
-            android:id="@+id/humidity_degree"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="5dp"
-            android:text="86%"
-            android:textColor="#64bcd4"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/humidity" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="25dp"
-            android:text="25℃"
-            android:textColor="#122e54"
             android:textSize="40sp"
-            app:layout_constraintEnd_toStartOf="@+id/water_temperature"
-            app:layout_constraintStart_toEndOf="@+id/humidity"
-            app:layout_constraintTop_toBottomOf="@+id/weather" />
-
+            android:text="25℃"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/below2"
+            android:layout_centerHorizontal="true"/>
         <TextView
-            android:id="@+id/water_temperature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="50dp"
-            android:layout_marginTop="30dp"
-            android:text="수온"
+            android:text="습도
+26%"
             android:textColor="#64bcd4"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weather" />
-
+            android:layout_below="@id/below2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"/>
         <TextView
-            android:id="@+id/water_temperature_degree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="50dp"
-            android:layout_marginTop="5dp"
-            android:text="66℃"
+            android:text="수온
+26℃"
             android:textColor="#64bcd4"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/water_temperature" />
-
+            android:layout_below="@id/below2"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"/>
         <TextView
-            android:id="@+id/wind_direction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="40dp"
             android:text="풍향"
-            android:textColor="#122e54"
             android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/humidity_degree" />
-
+            android:layout_below="@id/below3"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/below4_1"/>
         <TextView
-            android:id="@+id/wind_speed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="10dp"
             android:text="풍속"
-            android:textColor="#122e54"
+            android:layout_below="@id/below4_1"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
             android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/wind_direction" />
-
+            android:id="@+id/below4_3"/>
         <TextView
-            android:id="@+id/gust"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="10dp"
             android:text="Gust"
-            android:textColor="#122e54"
+            android:layout_below="@id/below4_3"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
             android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/wind_speed" />
-
+            android:id="@+id/below4_4"/>
         <TextView
-            android:id="@+id/maximun_wave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="26dp"
             android:text="최대 파도"
-            android:textColor="#122e54"
+            android:layout_below="@id/below4_4"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
             android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gust" />
-
+            android:id="@+id/below4_5"/>
         <TextView
-            android:id="@+id/becareful_wave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="10dp"
             android:text="유의 파도"
-            android:textColor="#122e54"
+            android:layout_below="@id/below4_5"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
             android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/maximun_wave" />
-
+            android:id="@+id/below4_6"/>
         <TextView
-            android:id="@+id/average_wave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="10dp"
             android:text="평균 파도"
-            android:textColor="#122e54"
+            android:layout_below="@id/below4_6"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
             android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/becareful_wave" />
-
+            android:id="@+id/below4_7"/>
         <TextView
-            android:id="@+id/wave_cycle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="10dp"
             android:text="파 주기"
-            android:textColor="#122e54"
+            android:layout_below="@id/below4_7"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
             android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/average_wave" />
-
+            android:id="@+id/below4_8"/>
         <TextView
-            android:id="@+id/wind_direction_show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="58dp"
-            android:layout_marginTop="41dp"
             android:text="북동쪽"
-            android:textColor="#122e54"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/water_temperature_degree" />
-
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/below3"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/below5_1"/>
         <TextView
-            android:id="@+id/wind_speed_show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="58dp"
-            android:layout_marginTop="10dp"
-            android:text="0.4m/s"
-            android:textColor="#122e54"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/wind_direction_show" />
-
-        <TextView
-            android:id="@+id/guest_show"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="58dp"
-            android:layout_marginTop="10dp"
             android:text="6.2m/s"
-            android:textColor="#122e54"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/wind_speed_show" />
-
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/below5_2"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/below5_3"/>
         <TextView
-            android:id="@+id/maximun_wave_show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="58dp"
-            android:layout_marginTop="30dp"
             android:text="0.8m"
-            android:textColor="#122e54"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/guest_show" />
-
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/below5_3"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/below5_4"/>
         <TextView
-            android:id="@+id/becareful_wave_show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="58dp"
-            android:layout_marginTop="10dp"
             android:text="0.4m"
-            android:textColor="#122e54"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/maximun_wave_show" />
-
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/below5_4"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/below5_5"/>
         <TextView
-            android:id="@+id/average_wave_show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="58dp"
-            android:layout_marginTop="10dp"
             android:text="0.3m"
-            android:textColor="#122e54"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/becareful_wave_show" />
-
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/below5_5"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/below5_6"/>
         <TextView
-            android:id="@+id/wave_cycle_show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="58dp"
-            android:layout_marginTop="10dp"
-            android:text="5.3 sec"
-            android:textColor="#122e54"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/average_wave_show" />
+            android:text="북동쪽"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/below5_6"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/below5_7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.4m/s"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/below5_1"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/below5_2"/>
 
-
-    </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

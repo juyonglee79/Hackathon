@@ -30,6 +30,18 @@ public class MapActivity extends AppCompatActivity implements View.OnTouchListen
         ImageView ic_q=findViewById(R.id.ic_q);
         ImageView ic_w=findViewById(R.id.ic_w);
         ImageView ic_e=findViewById(R.id.ic_e);
+        ImageView ic_guard=findViewById(R.id.ic_guard);
+        ImageView ic_wc=findViewById(R.id.ic_wc);
+        ImageView ic_wcc=findViewById(R.id.ic_wcc);
+        ImageView ic_mic=findViewById(R.id.ic_mic);
+        ImageView ic_pc=findViewById(R.id.ic_pc);
+        ImageView ic_market=findViewById(R.id.ic_market);
+        ic_guard.setOnTouchListener(this);
+        ic_wc.setOnTouchListener(this);
+        ic_wcc.setOnTouchListener(this);
+        ic_pc.setOnTouchListener(this);
+        ic_mic.setOnTouchListener(this);
+        ic_market.setOnTouchListener(this);
         ic_1.setOnTouchListener(this);
         ic_2.setOnTouchListener(this);
         ic_3.setOnTouchListener(this);
